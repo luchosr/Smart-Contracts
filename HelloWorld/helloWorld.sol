@@ -1,7 +1,19 @@
 pragma solidity ^0.4.0;
 
 contract helloWorld {
-    string public word = "Hello Fucked World";
+
+    string  word = "Hello Fucked World";
+
+    function getWord() public constant returns(string){
+        return word;
+    }
+    function setWord(string newWord) public  returns(string) {
+    //     //..
+        word = newWord;
+        return word;
+    }
+
+    
 }
 
 // si usamos public para word, obtenemos la variable
@@ -11,3 +23,12 @@ contract helloWorld {
 //que vas a ver en el compilador Remix.
 // Los Steer estan en Rojo, y te permiten
 // cambiar la info, editarla.
+
+
+//Cada vez que usamos un getter no hay necesidad 
+//de minar un bloque, no asi con los Setter que se 
+// ven una vez minados en la blockchain
+
+
+// En los errores de "No visibility specified explicitly for function"
+// acordate de poer en publico la visibilidad.
