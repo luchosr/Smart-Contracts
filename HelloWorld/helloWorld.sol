@@ -2,13 +2,27 @@ pragma solidity ^0.4.0;
 
 contract helloWorld {
 
+    
+
     string  word = "Hello Fucked World";
+    address public issuer;
+
+    function helloWorld() public{
+        issuer = msg.sender;
+    } 
 
     function getWord() public constant returns(string){
         return word;
     }
     function setWord(string newWord) public  returns(string) {
     //     //..
+        if(issuer != msg.sender){
+            return "This is not the creator";
+        }
+        else {
+            word = newWord;
+            return "Hello, Creator";
+        }
         word = newWord;
         return word;
     }
