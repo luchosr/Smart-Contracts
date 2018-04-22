@@ -1,1 +1,3 @@
-## Hello, I am a readme file.
+# Smart Contract example.
+
+## I'm traiyng to do something with the following tutorials:
