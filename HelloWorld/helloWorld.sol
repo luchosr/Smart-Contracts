@@ -35,17 +35,3 @@ contract helloWorld {
     
 }
 
-
-// Los botones azules son botones Getters,
-//que vas a ver en el compilador Remix.
-// Los Setter estan en Rojo, y te permiten
-// cambiar la info, editarla.
-
-
-//Cada vez que usamos un getter no hay necesidad 
-//de minar un bloque, no asi con los Setter que se 
-// ven una vez minados en la blockchain
-
-
-// En los errores de "No visibility specified explicitly for function"
-// acordate de poer en publico la visibilidad.
