@@ -5,13 +5,18 @@ contract helloWorld {
     
 
     string  word = "Hello Fucked World";
+
     address public issuer;
+    // using "public" for a variable, is directly making  getter function on it.
 
     function helloWorld() public{
         issuer = msg.sender;
     } 
 
     function getWord() public constant returns(string){
+        // In a getter function, there is no need to mine a Block.
+        //In a setter case, you have to mine a Block because you are changing the contract's Data.
+
         return word;
     }
     function setWord(string newWord) public  returns(string) {
@@ -30,12 +35,10 @@ contract helloWorld {
     
 }
 
-// si usamos public para word, obtenemos la variable
-// porque la hacemos pública.
 
 // Los botones azules son botones Getters,
 //que vas a ver en el compilador Remix.
-// Los Steer estan en Rojo, y te permiten
+// Los Setter estan en Rojo, y te permiten
 // cambiar la info, editarla.
 
 
