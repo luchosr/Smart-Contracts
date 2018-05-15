@@ -14,4 +14,4 @@
 
 * If you are stucked with `No visibility specified explicitly for function's` error, you have to put `public` statement to all the functions in your contract, and you will solve the visibility issue.
 
-### I'm traiyng to do something with the following tutorials:
+### I'm trying to do something with the following tutorials:
