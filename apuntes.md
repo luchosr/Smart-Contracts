@@ -47,3 +47,29 @@
 * En `Solidity` las operaciones matemáticas son iguales que en el resto de los lenguajes a excepción de las operaciones exponenciales que se notan de  la siguiente manera:
 
             uint x = 5 ** 2 (esto sería 5^2, que da 25.)
+
+
+### **D) Estructuras de datos.**
+
+* Hay ocasiones en que en `Solidity` se necesitan emplear estructuras de datos complejas, en donde podemos recurrir a `structs` de la siguiente manera:
+
+            struct Person{
+                uint age;
+                string name;
+            }
+
+> Nota: acabamos de introductir un nuevo tipo de dato string, que se usan para cadenas de texto UTF-8 de longitud arbitraria. Ejemplo: string greeting = "¡Hola Mundo!"
+
+
+### **E) Arrays.**
+
+* Existen dos tipos de arrays en `Solidity`, los `fijos` y los `dinamicos`.
+
+            Arrays fijos vendrían a ser:
+            uint[2] fixedAray; //array de numeros
+            string[5] stringArray; //coleccion de palabras
+            uint[] dynamicArray; //array dinamico con longitud indefinida
+
+* Tambien se pueden crear arrays de structuras. Si usamos la estructura Person que creamos anteriormente:
+
+        
